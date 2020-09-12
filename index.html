@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-200 xl:flex xl:flex-wrap xl:max-h-screen">
+    <!-- Start Header-Navbar -->
+    <header class="bg-gray-900 sm:flex sm:justify-between xl:bg-gray-100 xl:w-full">
+        <div class="py-2 px-2 flex justify-between items-baseline sm:items-center xl:px-0 xl:py-0 xl:flex-1 xl:justify-start">
+            <div class="xl:bg-gray-900 xl:h-full xl:flex xl:items-center xl:justify-center xl:w-80 xl:flex-shrink-0">
+                <div>
+                    <svg class="h-8 w-auto fill-current text-gray-500" viewBox="0 0 185 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M121.09 28.336c2.352 0 4.392-1.248 5.424-3.12l-2.688-1.536c-.48.984-1.512 1.584-2.76 1.584-1.848 0-3.216-1.368-3.216-3.264 0-1.92 1.368-3.288 3.216-3.288 1.224 0 2.256.624 2.736 1.608l2.664-1.56c-.984-1.848-3.024-3.096-5.376-3.096-3.648 0-6.336 2.76-6.336 6.336 0 3.576 2.688 6.336 6.336 6.336zM137.084 16v1.416c-.864-1.08-2.16-1.752-3.912-1.752-3.192 0-5.832 2.76-5.832 6.336 0 3.576 2.64 6.336 5.832 6.336 1.752 0 3.048-.672 3.912-1.752V28h3.096V16h-3.096zm-3.336 9.384c-1.896 0-3.312-1.368-3.312-3.384s1.416-3.384 3.312-3.384c1.92 0 3.336 1.368 3.336 3.384s-1.416 3.384-3.336 3.384zM149.851 18.976V16h-2.712v-3.36l-3.096.936V16h-2.088v2.976h2.088v4.992c0 3.24 1.464 4.512 5.808 4.032v-2.808c-1.776.096-2.712.072-2.712-1.224v-4.992h2.712zM153.57 14.56c1.056 0 1.92-.864 1.92-1.896s-.864-1.92-1.92-1.92c-1.032 0-1.896.888-1.896 1.92s.864 1.896 1.896 1.896zM152.034 28h3.096V16h-3.096v12zM163.676 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM178.886 15.664c-1.608 0-2.856.6-3.576 1.68V16h-3.096v12h3.096v-6.48c0-2.088 1.128-2.976 2.64-2.976 1.392 0 2.376.84 2.376 2.472V28h3.096v-7.368c0-3.192-1.992-4.968-4.536-4.968z"
+                            fill="#667EEA" />
+                        <path
+                            d="M61.063 28h3.768l3.144-11.088L71.143 28h3.768l4.704-16.8h-3.48L72.92 23.656 69.391 11.2H66.56l-3.504 12.456L59.84 11.2h-3.48L61.063 28zM85.674 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM97.308 18.064V16h-3.096v12h3.096v-5.736c0-2.52 2.04-3.24 3.648-3.048V15.76c-1.512 0-3.024.672-3.648 2.304zM113.831 28l-4.968-6.072L113.687 16h-3.696l-4.128 5.28V11.2h-3.096V28h3.096v-5.448L110.231 28h3.6z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.911 12.604L36.213 8.16v20.645h9v2h-44v-2h4v-12.72l-3.728.933L1 15.078l21.09-5.273h3.122a9.552 9.552 0 0 0-.68 2.559l-.483 3.975 5.164-2.982v15.448h5V8.161l-7.696 4.444a7.502 7.502 0 0 1 2.565-4.8h-4.12a7.489 7.489 0 0 1 6.646-2.973l-5.591-3.228a7.488 7.488 0 0 1 6.696.402c1.039.6 1.88 1.41 2.5 2.347a7.461 7.461 0 0 1 2.5-2.347 7.49 7.49 0 0 1 6.698-.402l-5.593 3.228a7.488 7.488 0 0 1 6.646 2.973h-4.12a7.498 7.498 0 0 1 2.567 4.8zM25.213 28.805v-10h-6v10h6zm-11-8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"
+                            fill="#667EEA" />
+                    </svg>
+                </div>
+            </div>
+            <div class="menu-controller sm:hidden">
+                <svg class="w-6 h-6 fill-current  text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path class="heroicon-ui" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
+                </svg>
+                <svg class="h-6 w-6 hidden fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                </svg>
+            </div>
+                <div class="relative hidden xl:flex xl:ml-4 xl:w-64">
+                    <div class="absolute flex items-center absolute opacity-50 inset-y-0 left-0 ml-3">
+                        <div>
+                                <svg class="h-6 w-6 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+                        </div>
+                    </div>
+                    <input 
+                    class="xl:py-2 pl-10 pr-2 rounded-lg bg-gray-300 placeholder-gray-500 text-gray-600 text-sm font-semibold tracking-wider xl:w-full xl:flex" 
+                    type="search" name="" id="" placeholder="Search for keywords">
+            </div>
+        </div>
+        <!-- Start Menu-scetion -->
+        <nav class="sm:flex sm:items-center">
+            <div class="py-4 px-4 sm:px-2 border-b border-gray-600 sm:flex sm:border-none">
+                <span class="block sm:mt-2 text-sm font-semibold xl:text-md xl:font-semibold text-gray-200 tracking-wider hover:text-gray-400 xl:hover:text-gray-700 sm:ml-4 xl:text-gray-900">List your property</span>
+                <span class="block mt-2 text-sm font-semibold xl:text-md xl:font-semibold text-gray-200 tracking-wider hover:text-gray-400 sm:ml-4 xl:hover:text-gray-700 xl:text-gray-900">Trips</span>
+                <span class="block mt-2 text-sm font-semibold xl:text-md xl:font-semibold text-gray-200 tracking-wider hover:text-gray-400 sm:ml-4 xl:hover:text-gray-700 xl:text-gray-900">Messages</span>
+            </div>
+            <div class="py-4 px-4 sm:pl-2">
+                <div class="flex items-center">
+                    <img class="w-10 h-10 rounded-full" src="./person1.jpg" alt="">
+                    <span class="block ml-2 text-sm font-semibold text-gray-200 sm:hidden">Mechial Schoger</span>
+                </div>
+                <div class="mt-4 sm:hidden">
+                    <span class="block text-gray-600 text-sm font-semibold">Account Setting</span>
+                    <span class="block mt-2 text-gray-600 text-sm font-semibold">Support</span>
+                    <span class="block mt-2 text-gray-600 text-sm font-semibold">Sign out</span>
+                </div>
+            </div>
+        </nav>
+        <!-- End Menu-scetion -->
+    </header>
+    <!-- End Header-Navbar -->
+
+    <!-- Start Search-Filter Section -->
+    <section class="relative flex px-2 py-2 justify-between bg-gray-800 xl:hidden">
+        <div class="flex items-center absolute opacity-50 inset-y-0 left-0 ml-3">
+            <div class="">
+                    <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+            </div>
+        </div>
+        <div class="flex max-w-sm w-full mr-2 sm:max-w-md sm:w-full">
+            <input 
+            class="pl-10 pr-2 rounded-lg bg-gray-900 placeholder-gray-500 text-gray-400 text-sm font-semibold tracking-wider w-full" 
+            type="search" name="" id="" placeholder="Search for keywords">
+        </div>
+        <div >
+            <button class="flex items-center px-2 sm:px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg">
+                <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6v2h18V6H3zm7 12h4v-2h-4v2zm8-5H6v-2h12v2z" />
+                </svg>
+                <span class="text-white text-sm font-medium tracking-wider tracking-wide ml-1">Filters</span>
+            </button>
+        </div>
+    </section>
+    <!-- End Search-Filter Section -->
+        
+    <!-- Start filtering section -->
+    <section class="bg-gray-800 border-t border-gray-900 xl:block xl:w-80 xl:flex-shrink-0">
+        <div class="xl:flex xl:flex-col lg lg:flex lg:flex-wrap xl:justify-between xl:h-full">
+            <div class="xl:flex-1">
+                <div class="px-4 pt-4 pb-5 border-b border-gray-900 sm:flex lg:flex-wrap lg:w-3/8 lg:border-b-0 xl:w-full">
+                    <div class="flex sm:w-1/2 lg:w-full">
+                        <div class="w-1/2 mr-2">
+                            <label class="block text-gray-400 text-sm font-semibold leading-loose" for="bedroomsSelection">
+                                Bedrooms
+                            </label>
+                            <select class="form-select w-full text-gray-200 bg-gray-700 border-none" name="" id="bedroomsSelection">
+                                <option value="4" class="text-white">2</option>
+                            </select>
+                        </div>
+                        <div class="w-1/2">
+                            <label class="block text-gray-400 text-sm font-semibold leading-loose" for="bathroomsSelection">
+                                Bathrooms
+                            </label>
+                            <select class="form-select w-full text-gray-200 bg-gray-700 border-none" name="" id="bathroomsSelection">
+                                <option value="4" class="text-white">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:ml-2 sm:w-1/2 lg:w-full">
+                        <label class="block text-gray-400 text-sm font-semibold leading-loose" for="priceSelect">
+                            Price Range
+                        </label>
+                        <select class="form-select w-full text-gray-200 bg-gray-700 border-none"  name="" id="priceSelect">
+                            <option value="4">
+                                up to &dollar;2000 /wk
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="px-4 py-2 lg:border-gray-900 sm:py-4 lg:brder-l lg:w-2/8 lg:border-l lg:border-gray-900 xl:w-full">
+                    <span class="block mb-2 text-sm capitalize font-semibold text-gray-600">Property Type</span>
+                    <div class="sm:flex lg:flex-wrap">
+                        <div class="mt-2 sm:w-1/4 lg:w-full ">
+                            <input type="radio" class="border-none bg-gray-900 text-purple-700 form-radio" name="property_type" id="prop-radio-house">
+                            <label class="ml-2 text-gray-400 text-sm tracking-wide font-semibold" for="prop-radio-house">House</label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 lg:w-full ">
+                            <input type="radio" class="border-none bg-gray-900 text-purple-700 form-radio" name="property_type" id="prop-radio-apartment">
+                            <label class="ml-2 text-gray-400 text-sm tracking-wide font-semibold" for="prop-radio-apartment">Apartment</label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 lg:w-full ">
+                            <input type="radio" class="border-none bg-gray-900 text-purple-700 form-radio" name="property_type" id="prop-radio-loft">
+                            <label class="ml-2 text-gray-400 text-sm tracking-wide font-semibold" for="prop-radio-loft">Loft</label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 lg:w-full ">
+                            <input type="radio" class="border-none bg-gray-900 text-purple-700 form-radio" name="property_type" id="prop-radio-townhouse">
+                            <label class="ml-2 text-gray-400 text-sm tracking-wide font-semibold" for="prop-radio-townhouse">Town house</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-2 sm:py-4 border-t border-gray-900 lg:w-3/8 lg:border-t-0 lg:border-l lg:px-6 lg:border-gray-900 xl:w-full">
+                    <span class="block mb-2 text-sm capitalize font-semibold text-gray-600">Amentities</span>
+                    <div class="sm:flex sm:flex-wrap">
+                        <div class="sm:mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-balacony">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-balacony">Balacony</label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-air">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-air">
+                                Air conditioning
+                            </label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-pool">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-pool">
+                                Pool
+                            </label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-Beach">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-Beach">
+                                Beach
+                            </label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-pet">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-pet">
+                                Pet friendly
+                            </label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-parking">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-parking">
+                                Kid friendly
+                            </label>
+                        </div>
+                        <div class="mt-2 sm:w-1/4 sm:pb-4 lg:w-1/2 xl:w-full xl:pb-2">
+                            <input type="checkbox" class="border-none text-purple-600 bg-gray-900 form-checkbox" name="property_type" id="ami-check-parking">
+                            <label class="ml-1 text-gray-400 text-sm tracking-wide font-semibold" for="ami-check-air">
+                                Parking
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 px-4 md:py-2 lg:w-full bg-gray-900">
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-500 text-gray-200 py-1 w-full rounded-lg sm:w-auto sm:px-4  xl:w-full">
+                    Update results
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Search-Navbar -->
+    <!-- Start Main-container -->
+    <main class="xl:flex-1">
+        <div class="py-4 px-4">
+            <h3 class="pb-2 text-xl font-semibold capitalize text-gray-700">Los Angeles</h3>
+            <p class="text-gray-600 text-sm font-semibold leading-tight mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laborum saepe nesciunt tempora modi ea.
+            </p>
+            <div class="sm:flex sm:overflow-x-auto sm:py-4">
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig1.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig2.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig3.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig4.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig5.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 px-4 mt-6 overflow-y-hidden">
+            <h3 class="pb-2 text-xl font-semibold capitalize text-gray-700">Phoenix</h3>
+            <p class="text-gray-600 text-sm font-semibold leading-tight mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae saepe quas, vel consectetur ipsam facilis obcaecati aperiam aliquid quam. Ex quo nisi alias recusandae ab quasi nemo! Enim, harum unde placeat atque dicta quae.
+            </p>
+            <div class="sm:flex sm:overflow-x-auto sm:py-4">
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig7.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig8.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig8.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig9.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig9.jpg" alt="">
+                    </div>
+                    <div class="bg-white relative mx-2 px-2 py-4 rounded-lg shadow-lg -mt-16">
+                        <div class=" text-xs uppercase font-semibold tracking-wider">
+                            <span class="inline-block  bg-green-300 text-green-600 px-2 rounded-full">Plus</span>
+                            <span class="inline-block ml-2 text-gray-500">3 beds &middot; 2 baths</span>
+                        </div>
+                        <h4 class="mt-2 text-lg font-semibold text-gray-800">
+                            Modern Home In City Center
+                        </h4>
+                        <div class="mt-1">
+                            <span class="text-gray-900 font-sm font-semibold">&dollar; 1,400</span>
+                            <span class="text-gray-600 text-xs font-semibold ml-1">/wk</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="inline-flex items-center">
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-green-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                                <svg class="h-3 w-3 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 8.84L8.899 11l-.902-4.07L11 4.192l-3.955-.354L5.5 0 3.954 3.838 0 4.192 3.003 6.93 2.101 11 5.5 8.84z"/></svg>
+                            </span>
+                            <span class="ml-2 text-xs font-semibold uppercase tracking-wider text-gray-600">34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mt-4 sm:flex-shrink-0 sm:px-2">
+                    <div class="shadow-xl pb-667/1000 relative">
+                        <img class="absolute inset-0 object-fill rounded-md" src="./fig10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Start Main-container -->
+</body>
+<script>
+    
+</script>
+</html>
